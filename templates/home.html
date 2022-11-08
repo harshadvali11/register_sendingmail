@@ -6,5 +6,9 @@
 {% endblock %}
 
 {% block body_block %}
+{% if username %}
+    <h1>Welcome To Home MR/MS {{username}}</h1>
+{% else %}
     <h1>Welcome to Home Page</h1>
+{% endif %}
 {% endblock %}
